@@ -19,12 +19,10 @@ def refresh_interrogators() -> List[str]:
         'wd-vit-large-tagger-v3': WaifuDiffusionInterrogator(
             'wd-vit-large-tagger-v3',
             repo_id='SmilingWolf/wd-vit-large-tagger-v3',
-            revision='v3.0'
         ),
         'wd-eva02-large-tagger-v3': WaifuDiffusionInterrogator(
             'wd-eva02-large-tagger-v3',
             repo_id='SmilingWolf/wd-eva02-large-tagger-v3',
-            revision='v3.0'
         ),
         'wd14-convnextv2-v2': WaifuDiffusionInterrogator(
             'wd14-convnextv2-v2',
