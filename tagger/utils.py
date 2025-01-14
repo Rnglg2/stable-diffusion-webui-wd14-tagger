@@ -16,6 +16,16 @@ interrogators: Dict[str, Interrogator] = {}
 def refresh_interrogators() -> List[str]:
     global interrogators
     interrogators = {
+        'wd-vit-large-tagger-v3': WaifuDiffusionInterrogator(
+            'wd-vit-large-tagger-v3',
+            repo_id='SmilingWolf/wd-vit-large-tagger-v3',
+            revision='v3.0'
+        ),
+        'wd-eva02-large-tagger-v3': WaifuDiffusionInterrogator(
+            'wd-eva02-large-tagger-v3',
+            repo_id='SmilingWolf/wd-eva02-large-tagger-v3',
+            revision='v3.0'
+        ),
         'wd14-convnextv2-v2': WaifuDiffusionInterrogator(
             'wd14-convnextv2-v2',
             repo_id='SmilingWolf/wd-v1-4-convnextv2-tagger-v2',
@@ -59,6 +69,7 @@ def refresh_interrogators() -> List[str]:
             'wd14-convnext',
             repo_id='SmilingWolf/wd-v1-4-convnext-tagger'
         ),
+        #
     }
 
     # load deepdanbooru project

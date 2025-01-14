@@ -1,3 +1,5 @@
+***简单的修复了在webui-forge上的报错问题***
+
 ***This branch is unmaintained!***
 https://github.com/toriato/stable-diffusion-webui-wd14-tagger/issues/108
 ---

@@ -1,10 +1,13 @@
 from pathlib import Path
 from argparse import ArgumentParser
 
-from modules.shared import models_path
 
-default_ddp_path = Path(models_path, 'deepdanbooru')
+#from modules.shared import models_path
 
+#default_ddp_path = Path(models_path, 'deepdanbooru')
+
+from modules import paths
+default_ddp_path = Path(paths.models_path,'deepanbooru')
 
 def preload(parser: ArgumentParser):
     # default deepdanbooru use different paths:

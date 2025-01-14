@@ -7,7 +7,10 @@ from pathlib import Path
 from glob import glob
 from PIL import Image, UnidentifiedImageError
 
-from webui import wrap_gradio_gpu_call
+
+#from webui import wrap_gradio_gpu_call
+
+from modules.call_queue import wrap_gradio_gpu_call
 from modules import ui
 from modules import generation_parameters_copypaste as parameters_copypaste
 
@@ -210,7 +213,7 @@ def on_interrogate(
 
 def on_ui_tabs():
     with gr.Blocks(analytics_enabled=False) as tagger_interface:
-        with gr.Row().style(equal_height=False):
+        with gr.Row(equal_height=False):
             with gr.Column(variant='panel'):
 
                 # input components
